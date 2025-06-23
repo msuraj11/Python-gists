@@ -85,6 +85,12 @@ inner_func = outer(x)
 inner_func()
 # 20
 
+def give_vowel_count(sentence):
+  return {vowel: sentence.lower().count(vowel) for vowel in 'aeiou'}
+
+give_vowel_count('This sentence has vowels with only one "u"')
+# {'a': 1, 'e': 5, 'i': 2, 'o': 3, 'u': 1}
+
 class Dog:
   def __init__(self, **kwargs):
     self.dog_props = kwargs
